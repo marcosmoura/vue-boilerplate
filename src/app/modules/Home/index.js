@@ -1,4 +1,4 @@
-import Home from './Home';
+import Home from './Home'
 
 const routes = [
   {
@@ -6,6 +6,6 @@ const routes = [
     name: 'home',
     component: Home
   }
-];
+]
 
 export { routes }

@@ -1,6 +1,6 @@
-import Signup from './Signup';
-import Signin from './Signin';
-import RecoverPassword from './RecoverPassword';
+import Signup from './Signup'
+import Signin from './Signin'
+import RecoverPassword from './RecoverPassword'
 
 const routes = [
   {
@@ -18,6 +18,6 @@ const routes = [
     name: 'recover-password',
     component: RecoverPassword
   }
-];
+]
 
 export { routes }

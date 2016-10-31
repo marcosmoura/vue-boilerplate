@@ -3,7 +3,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App'
 import routes from './routes.js'
-import config from './config.js'
+import './config.js'
+import './core'
 
 Vue.use(VueRouter)
 

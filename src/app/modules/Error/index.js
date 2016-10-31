@@ -1,4 +1,4 @@
-import ErrorPage from './Error';
+import ErrorPage from './Error'
 
 const routes = [
   {
@@ -6,6 +6,6 @@ const routes = [
     name: 'error',
     component: ErrorPage
   }
-];
+]
 
 export { routes }
