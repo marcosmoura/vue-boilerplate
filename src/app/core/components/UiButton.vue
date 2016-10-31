@@ -8,7 +8,7 @@
   .ui-button {
     height: 36px;
     margin: 0;
-    padding: 0;
+    padding: 0 8px;
     border: none;
   }
 </style>

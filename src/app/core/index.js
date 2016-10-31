@@ -2,7 +2,7 @@
 import Vue from 'vue'
 import UiButton from './components/UiButton'
 
-Vue.component('md-button', UiButton)
+Vue.component('ui-button', UiButton)
 
 /* Filters */
 import Capitalize from './filters/Capitalize'

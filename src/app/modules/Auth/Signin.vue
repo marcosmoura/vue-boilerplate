@@ -7,3 +7,12 @@
 <style lang="scss" scoped>
 
 </style>
+
+<script>
+  import store from './store'
+
+  export default {
+    name: 'sign-in',
+    store
+  }
+</script>
