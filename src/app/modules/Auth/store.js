@@ -11,10 +11,10 @@ const store = new Vuex.Store({
     }
   },
   mutations: {
-    user: (state, user) => {
+    user(state, user) {
       state.user = user
     },
-    userName: (state, name) => {
+    userName(state, name) {
       state.user.name = name
     }
   },
