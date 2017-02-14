@@ -1,4 +1,4 @@
-import ErrorPage from './Error'
+const ErrorPage = (r) => require.ensure([], () => r(require('./Error')), 'core')
 
 const routes = [
   {

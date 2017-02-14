@@ -1,8 +1,8 @@
 /* Components */
 import Vue from 'vue'
-import UiButton from './components/UiButton'
+import BlankComponent from './components/BlankComponent'
 
-Vue.component('ui-button', UiButton)
+Vue.component('blank-component', BlankComponent)
 
 /* Filters */
 import Capitalize from './filters/Capitalize'

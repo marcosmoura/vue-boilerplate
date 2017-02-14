@@ -9,10 +9,7 @@
 </style>
 
 <script>
-  import store from './store'
-
   export default {
-    name: 'sign-up',
-    store
+    name: 'sign-up'
   }
 </script>

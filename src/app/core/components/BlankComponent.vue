@@ -1,6 +1,6 @@
 <template>
-  <div class="main-content">
-    <h1>Recover Password</h1>
+  <div class="blank-component">
+    <slot></slot>
   </div>
 </template>
 
@@ -10,6 +10,6 @@
 
 <script>
   export default {
-    name: 'recover-password'
+    name: 'blank-component'
   }
 </script>

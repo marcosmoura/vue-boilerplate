@@ -1,4 +1,4 @@
-import Home from './Home'
+const Home = (r) => require.ensure([], () => r(require('./Home')), 'core')
 
 const routes = [
   {
