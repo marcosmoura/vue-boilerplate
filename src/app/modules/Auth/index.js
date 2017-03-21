@@ -1,6 +1,6 @@
-const Signup = (r) => require.ensure([], () => r(require('./Signup')), 'auth')
-const Signin = (r) => require.ensure([], () => r(require('./Signin')), 'auth')
-const RecoverPassword = (r) => require.ensure([], () => r(require('./RecoverPassword')), 'auth')
+import Signup from './Signup'
+import Signin from './Signin'
+import RecoverPassword from './RecoverPassword'
 
 const routes = [
   {

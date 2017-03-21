@@ -7,28 +7,10 @@ const config = {
   srcPath: 'src',
   indexPath: 'src/index.html',
   publicPath: '/',
-  assetsPath: 'src/assets'
-}
-
-let dev = {
+  assetsPath: 'src/assets',
   server: {
     port: process.env.PORT || '8080'
-  },
-  env: {
-    NODE_ENV: '"development"'
   }
-}
-
-let prod = {
-  env: {
-    NODE_ENV: '"production"'
-  }
-}
-
-if (config.env === 'production') {
-  Object.assign(config, prod)
-} else {
-  Object.assign(config, dev)
 }
 
 export default config

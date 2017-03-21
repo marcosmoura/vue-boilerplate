@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div id="app" class="container">
     <nav>
       <router-link exact to="/">Home</router-link>
       <router-link exact to="sign-up">Sign Up</router-link>
