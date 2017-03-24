@@ -1,5 +1,5 @@
-const Home = r => require.ensure([], () => r(require('./pages/Home/Home.vue')), 'home')
-const ErrorPage = r => require.ensure([], () => r(require('./pages/Error/Error.vue')), 'error')
+const Home = r => require.ensure([], () => r(require('./modules/Home/Home.vue')), 'home')
+const ErrorPage = r => require.ensure([], () => r(require('./modules/Error/Error.vue')), 'error')
 
 export default [
   {
