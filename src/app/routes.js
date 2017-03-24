@@ -1,4 +1,4 @@
-import { routes as HomeRoutes } from './pages/Home'
-import { routes as ErrorRoutes } from './pages/Error'
+import HomeRoutes from './pages/Home'
+import ErrorRoutes from './pages/Error'
 
 export default [...HomeRoutes, ...ErrorRoutes]
