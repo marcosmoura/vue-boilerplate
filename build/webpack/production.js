@@ -7,7 +7,6 @@ import CopyWebpackPlugin from 'copy-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import OptimizeJsPlugin from 'optimize-js-plugin'
 import OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin'
-import PrerenderSpaPlugin from 'prerender-spa-plugin'
 import mediaPacker from 'css-mqpacker'
 import config from '../config'
 import baseConfig from './base'
@@ -130,7 +129,6 @@ export default merge(baseConfig, {
     }),
     new OptimizeCssAssetsPlugin({
       canPrint: false
-    }),
-    new PrerenderSpaPlugin(config.rootPath, ['/'])
+    })
   ]
 })

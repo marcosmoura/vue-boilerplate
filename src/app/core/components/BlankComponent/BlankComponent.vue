@@ -1,6 +1,6 @@
 <template>
-  <div class="main-content">
-    <h1>Error 404</h1>
+  <div calss="blank-component">
+    <slot></slot>
   </div>
 </template>
 
@@ -10,6 +10,6 @@
 
 <script>
   export default {
-    name: 'error'
-  }
+    name: 'blank-component'
+  };
 </script>
