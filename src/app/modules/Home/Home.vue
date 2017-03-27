@@ -4,12 +4,6 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss" scoped src="./Home.scss"></style>
 
-</style>
-
-<script>
-  export default {
-    name: 'home'
-  }
-</script>
+<script src="./Home.js"></script>

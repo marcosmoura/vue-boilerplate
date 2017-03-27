@@ -1,6 +1,6 @@
 <template>
-  <div class="main-content">
-    <h1>Sign in</h1>
+  <div calss="blank-component">
+    <slot></slot>
   </div>
 </template>
 
@@ -9,10 +9,7 @@
 </style>
 
 <script>
-  import store from './store'
-
   export default {
-    name: 'sign-in',
-    store
+    name: 'blank-component'
   }
 </script>

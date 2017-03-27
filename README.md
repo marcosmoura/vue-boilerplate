@@ -1,6 +1,6 @@
 # vue-boilerplate
 
-> An opinated Vue.js 2 boilerplate
+> An opinionated Vue.js 2 boilerplate
 
 ## Installation
 
@@ -19,5 +19,5 @@ npm run build
 npm run lint
 ```
 
-## License 
+## License
 MIT

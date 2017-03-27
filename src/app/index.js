@@ -1,4 +1,5 @@
 /* Third Party */
+import 'core-js/es6/promise'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
@@ -10,15 +11,17 @@ import './core'
 
 Vue.use(VueRouter)
 
-let router = new VueRouter({
-  hashbang: false,
+const router = new VueRouter({
+  mode: 'history',
   routes
 })
 
-/* eslint-disable no-new */
-new Vue({
+const rootInstance = new Vue({
   name: 'root',
-  el: '#app',
   router,
   render: mount => mount(App)
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  rootInstance.$mount('#app')
 })

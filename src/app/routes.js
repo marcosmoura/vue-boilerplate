@@ -1,5 +1,15 @@
-import { routes as HomeRoutes } from './modules/Home'
-import { routes as AuthRoutes } from './modules/Auth'
-import { routes as ErrorRoutes } from './modules/Error'
+const Home = r => require.ensure([], () => r(require('./modules/Home/Home.vue')), 'home')
+const ErrorPage = r => require.ensure([], () => r(require('./modules/Error/Error.vue')), 'error')
 
-export default [].concat(HomeRoutes, AuthRoutes, ErrorRoutes)
+export default [
+  {
+    path: '/',
+    name: 'home',
+    component: Home
+  },
+  {
+    path: '*',
+    name: 'error',
+    component: ErrorPage
+  }
+]

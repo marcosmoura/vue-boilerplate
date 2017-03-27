@@ -1,18 +1,18 @@
-import ora from 'ora';
-import webpack from 'webpack';
-import webpackConfig from '../webpack/prod';
+import webpack from 'webpack'
+import ora from 'ora'
+import webpackConfig from '../webpack/production'
 
 const spinner = ora({
   text: 'Building...',
   spinner: 'circleQuarters',
   color: 'green'
-});
+})
 
-spinner.start();
+spinner.start()
 
 webpack(webpackConfig, (error, stats) => {
   if (error) {
-    throw error;
+    throw error
   }
 
   process.stdout.write('\n\n' + stats.toString({
@@ -21,7 +21,7 @@ webpack(webpackConfig, (error, stats) => {
     children: false,
     chunks: false,
     chunkModules: false
-  }) + '\n');
+  }) + '\n')
 
-  spinner.stop();
-});
+  spinner.stop()
+})

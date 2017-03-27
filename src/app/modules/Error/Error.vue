@@ -4,12 +4,6 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss" scoped src="./Error.scss"></style>
 
-</style>
-
-<script>
-  export default {
-    name: 'error'
-  }
-</script>
+<script src="./Error.js"></script>

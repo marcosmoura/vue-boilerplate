@@ -1,34 +1,16 @@
-import path from 'path';
+import path from 'path'
 
 const config = {
-  projectRoot: path.resolve(__dirname, '../'),
-  rootPath: path.resolve(__dirname, '../dist'),
-  nodePath: path.resolve(__dirname, '../node_modules'),
+  projectRoot: path.join(__dirname, '../'),
+  rootPath: path.join(__dirname, '../dist'),
+  nodePath: path.join(__dirname, '../node_modules'),
   srcPath: 'src',
   indexPath: 'src/index.html',
   publicPath: '/',
-  assetsPath: 'src/assets'
-};
-
-let dev = {
+  assetsPath: 'src/assets',
   server: {
-    port: process.env.PORT || '9000'
-  },
-  env: {
-    NODE_ENV: '"development"'
+    port: process.env.PORT || '8080'
   }
-};
-
-let prod = {
-  env: {
-    NODE_ENV: '"production"'
-  }
-};
-
-if (config.env === 'production') {
-  Object.assign(config, prod);
-} else {
-  Object.assign(config, dev);
 }
 
-export default config;
+export default config
