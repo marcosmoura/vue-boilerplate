@@ -6,17 +6,23 @@
     [
       "env",
       {
-        "targets": {
-          "browsers": [
-            "last 3 versions",
-            "not IE < 10"
-          ]
-        }
+        "modules": false
       }
     ]
   ],
   "plugins": [
     "transform-runtime",
     "add-module-exports"
-  ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "es2015",
+        "vue-app"
+      ],
+      "plugins": [
+        "istanbul"
+      ]
+    }
+  }
 }

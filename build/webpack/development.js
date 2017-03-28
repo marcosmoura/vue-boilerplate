@@ -3,6 +3,7 @@ import merge from 'webpack-merge'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import FriendlyErrorsPlugin from 'friendly-errors-webpack-plugin'
 import baseWebpackConfig from './base'
+import vueLoaderConfig from './vue-loader-config'
 import config from '../config'
 
 Object.keys(baseWebpackConfig.entry).forEach((name) => {
@@ -16,16 +17,7 @@ export default merge(baseWebpackConfig, {
       {
         test: /\.vue$/,
         loader: 'vue-loader',
-        options: {
-          loaders: {
-            css: 'vue-style-loader!css-loader',
-            scss: 'vue-style-loader!css-loader!sass-loader'
-          }
-        }
-      },
-      {
-        test: /\.css$/,
-        use: ['vue-style-loader', 'css-loader']
+        options: vueLoaderConfig
       },
       {
         test: /\.scss$/,
