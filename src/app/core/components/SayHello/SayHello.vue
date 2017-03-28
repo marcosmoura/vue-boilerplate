@@ -8,7 +8,7 @@
 
 <script>
   export default {
-    name: 'blank-component',
+    name: 'say-hello',
     methods: {
       sayHello() {
         return 'Hello'
