@@ -2,6 +2,13 @@
 
 > An opinionated Vue.js 2 boilerplate
 
+## Tools
+* Vue.js 2.2
+* Vue Router
+* SASS with Autoprefixer
+* AVA Tests
+* Istanbul Coverage
+
 ## Installation
 
 ``` bash
