@@ -6,17 +6,22 @@
 
 ``` bash
 ### Install dependencies
-npm install
 yarn
 
 ### Start dev server with hot reload
-npm run dev
+yarn run dev
 
 ### Build everything
-npm run build
+yarn run build
 
 ### Lint files
-npm run lint
+yarn run lint
+
+### Run the tests
+yarn run test
+
+### Check the coverage
+yarn run coverage
 ```
 
 ## License
