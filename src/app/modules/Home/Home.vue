@@ -6,4 +6,4 @@
 
 <style lang="scss" scoped src="./Home.scss"></style>
 
-<script src="./Home.js"></script>
+<script lang="babel" src="./Home.js"></script>

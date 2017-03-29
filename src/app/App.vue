@@ -9,7 +9,7 @@
   </div>
 </template>
 
-<script>
+<script lang="babel">
   export default {
     name: 'app'
   }

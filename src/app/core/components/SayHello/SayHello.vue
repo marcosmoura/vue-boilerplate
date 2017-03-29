@@ -6,7 +6,7 @@
 
 </style>
 
-<script>
+<script lang="babel">
   export default {
     name: 'say-hello',
     methods: {

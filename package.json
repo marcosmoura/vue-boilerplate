@@ -13,7 +13,7 @@
     "dev": "babel-node build/server/development.js --presets es2015,stage-0",
     "build": "rm -rf dist && babel-node build/server/production.js --presets es2015,stage-0",
     "test": "ava **/*.test.js",
-    "coverage": "rm -rf .nyc_output coverage && mkdir .nyc_output && cross-env NODE_ENV=test nyc --reporter=html --reporter=text yarn run test",
+    "coverage": "rm -rf .nyc_output .coverage && mkdir .nyc_output && cross-env NODE_ENV=test nyc yarn run test",
     "lint": "eslint --ext .js,.vue --fix src"
   },
   "dependencies": {
@@ -65,6 +65,8 @@
     "vue-node": "^1.0.2",
     "vue-style-loader": "^2.0.5",
     "vue-template-compiler": "^2.2.6",
+    "vuegister": "^0.2.0",
+    "vuegister-plugin-babel": "^0.2.0",
     "webpack": "^2.3.2",
     "webpack-dev-middleware": "^1.10.1",
     "webpack-hot-middleware": "^2.17.1",
@@ -78,6 +80,11 @@
     "cache": false,
     "sourceMap": false,
     "instrument": false,
+    "report-dir": ".coverage",
+    "reporter": [
+      "html",
+      "text-summary"
+    ],
     "exclude": [
       "build",
       "**/*.test.js"
@@ -92,7 +99,6 @@
   },
   "ava": {
     "require": [
-      "babel-register",
       "./build/test/setup.js"
     ]
   }
