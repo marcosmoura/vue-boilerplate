@@ -5,11 +5,11 @@
       <router-link exact to="/about">About</router-link>
     </nav>
 
-    <router-view></router-view>
+    <router-view />
   </div>
 </template>
 
-<script>
+<script lang="babel">
   export default {
     name: 'app'
   }

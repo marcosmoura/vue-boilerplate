@@ -1,5 +1,4 @@
 /* Third Party */
-import 'core-js/es6/promise'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
@@ -16,12 +15,10 @@ const router = new VueRouter({
   routes
 })
 
-const rootInstance = new Vue({
+// eslint-disable-next-line
+new Vue({
   name: 'root',
+  el: '#app',
   router,
   render: mount => mount(App)
-})
-
-document.addEventListener('DOMContentLoaded', () => {
-  rootInstance.$mount('#app')
 })

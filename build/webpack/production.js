@@ -35,9 +35,7 @@ export default merge(baseConfig, {
             })
           },
           postcss: [
-            autoprefixer({
-              browsers: ['last 3 versions', 'not IE < 10']
-            }),
+            autoprefixer(),
             mediaPacker()
           ]
         }

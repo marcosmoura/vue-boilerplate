@@ -6,4 +6,4 @@
 
 <style lang="scss" scoped src="./Error.scss"></style>
 
-<script src="./Error.js"></script>
+<script lang="babel" src="./Error.js"></script>
