@@ -9,7 +9,7 @@
 - [ ] Vuex
 - [X] Vue Router
 - [ ] Vue Router Sync
-- [ ] Vue i18n
+- [X] Vue i18n
 - [X] Fetch API
 - [ ] Flow Type
 - [X] Hotreload

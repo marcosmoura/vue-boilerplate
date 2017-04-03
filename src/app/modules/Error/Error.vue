@@ -1,6 +1,6 @@
 <template>
   <div class="main-content">
-    <h1>Error 404</h1>
+    <h1>{{ $t('error.title') }}</h1>
   </div>
 </template>
 
