@@ -6,8 +6,8 @@
 - [X] Webpack 2
 - [X] ESLint
 - [X] Vue.js
-- [ ] Vuex
-- [ ] Vuex Router Sync
+- [X] Vuex
+- [X] Vuex Router Sync
 - [X] Vue Router
 - [X] Vue i18n
 - [X] Fetch API
