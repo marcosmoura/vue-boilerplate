@@ -15,12 +15,15 @@
     ]
   ],
   "plugins": [
+    "transform-runtime",
     "transform-async-to-generator"
   ],
+  "comments": false,
   "env": {
     "test": {
       "presets": [
-        "es2015"
+        "env",
+        "stage-2"
       ],
       "plugins": [
         "istanbul"

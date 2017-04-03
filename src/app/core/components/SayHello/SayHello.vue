@@ -9,9 +9,12 @@
 <script lang="babel">
   export default {
     name: 'say-hello',
+    data: () => ({
+      hello: 'Hello'
+    }),
     methods: {
       sayHello() {
-        return 'Hello'
+        return this.hello
       }
     }
   }
