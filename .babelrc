@@ -14,11 +14,13 @@
       }
     ]
   ],
+  "plugins": [
+    "transform-async-to-generator"
+  ],
   "env": {
     "test": {
       "presets": [
-        "es2015",
-        "vue-app"
+        "es2015"
       ],
       "plugins": [
         "istanbul"

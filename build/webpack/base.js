@@ -23,8 +23,10 @@ export default {
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
+      app: resolvePath('src/app'),
       assets: resolvePath('src/assets'),
-      core: resolvePath('src/app/core')
+      core: resolvePath('src/app/core'),
+      i18n: resolvePath('src/app/i18n')
     }
   },
   module: {

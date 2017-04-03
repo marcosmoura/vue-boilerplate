@@ -1,13 +1,10 @@
-if (process.env.NODE_ENV === 'test') {
-  const browserEnv = require('browser-env')
-  const vueNode = require('vue-node')
-  const { join } = require('path')
+const jsdom = require('jsdom-global')
+const { addAlias } = require('module-alias')
+const { register } = require('vuegister')
+const aliases = require('../webpack/base').default.resolve.alias;
 
-  browserEnv()
-  vueNode(join(__dirname, 'config.js'))
-} else {
-  require('babel-register')()
-  require('vuegister').register({
-    maps: true
-  })
-}
+Object.keys(aliases).forEach(key => addAlias(key, aliases[key]));
+
+addAlias('vue', 'vue/dist/vue.min');
+jsdom()
+register()

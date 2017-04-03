@@ -1,7 +1,11 @@
-const Home = r => require.ensure([], () => r(require('./modules/Home/Home.vue')), 'home')
-const ErrorPage = r => require.ensure([], () => r(require('./modules/Error/Error.vue')), 'error')
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Home from './modules/Home/Home.vue'
+import ErrorPage from './modules/Error/Error.vue'
 
-export default [
+Vue.use(VueRouter)
+
+const routes = [
   {
     path: '/',
     name: 'home',
@@ -13,3 +17,8 @@ export default [
     component: ErrorPage
   }
 ]
+
+export default new VueRouter({
+  mode: 'history',
+  routes
+})

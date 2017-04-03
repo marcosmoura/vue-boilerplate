@@ -7,15 +7,15 @@
 - [X] ESLint
 - [X] Vue.js
 - [ ] Vuex
+- [ ] Vuex Router Sync
 - [X] Vue Router
-- [ ] Vue Router Sync
 - [X] Vue i18n
 - [X] Fetch API
 - [ ] Flow Type
 - [X] Hotreload
 - [X] SASS with Autoprefixer
 - [X] AVA Tests
-- [X] Code Coverage
+- [-] Code Coverage - Still buggy
 - [ ] Offline Support
 - [ ] Server-Side Rendering
 
