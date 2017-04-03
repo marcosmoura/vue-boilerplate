@@ -9,7 +9,10 @@ const resolvePath = (dir) => {
 
 export default {
   entry: {
-    app: './src/app/index.js'
+    app: [
+      'whatwg-fetch',
+      './src/app/index.js'
+    ]
   },
   output: {
     path: config.rootPath,

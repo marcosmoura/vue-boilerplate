@@ -7,7 +7,10 @@ import vueLoaderConfig from './vue-loader-config'
 import config from '../config'
 
 Object.keys(baseWebpackConfig.entry).forEach((name) => {
-  baseWebpackConfig.entry[name] = ['./build/server/client', ...[baseWebpackConfig.entry[name]]]
+  baseWebpackConfig.entry[name] = [
+    './build/server/client',
+    ...baseWebpackConfig.entry[name]
+  ]
 })
 
 export default merge(baseWebpackConfig, {

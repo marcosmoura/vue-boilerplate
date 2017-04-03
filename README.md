@@ -1,13 +1,23 @@
 # vue-boilerplate
 
-> An opinionated Vue.js 2 boilerplate
+> An opinionated Vue.js boilerplate
 
-## Tools
-* Vue.js 2.2
-* Vue Router
-* SASS with Autoprefixer
-* AVA Tests
-* Istanbul Coverage
+## Progress
+- [X] Webpack 2
+- [X] ESLint
+- [X] Vue.js
+- [ ] Vuex
+- [X] Vue Router
+- [ ] Vue Router Sync
+- [ ] Vue i18n
+- [X] Fetch API
+- [ ] Flow Type
+- [X] Hotreload
+- [X] SASS with Autoprefixer
+- [X] AVA Tests
+- [X] Code Coverage
+- [ ] Offline Support
+- [ ] Server-Side Rendering
 
 ## Installation
 
