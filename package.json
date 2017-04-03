@@ -61,6 +61,7 @@
     "url-loader": "^0.5.8",
     "vue-html-loader": "^1.2.4",
     "vue-loader": "^11.3.4",
+    "vue-node": "^1.1.0",
     "vue-style-loader": "^2.0.5",
     "vue-template-compiler": "^2.2.6",
     "vuegister": "^0.2.0",

@@ -15,7 +15,7 @@
 - [X] Hotreload
 - [X] SASS with Autoprefixer
 - [X] AVA Tests
-- [-] Code Coverage - Still buggy
+- [X] Code Coverage
 - [ ] Offline Support
 - [ ] Server-Side Rendering
 
