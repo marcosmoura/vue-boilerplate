@@ -1,17 +1,17 @@
-import webpack from 'webpack'
 import ora from 'ora'
+import chalk from 'chalk'
+import webpack from 'webpack'
 import webpackConfig from '../webpack/production'
 
-const spinner = ora({
-  text: 'Building...',
-  spinner: 'circleQuarters',
-  color: 'green'
-})
+const spinner = ora(chalk.cyan('Building project'))
 
+process.stdout.write('\n')
 spinner.start()
 
 webpack(webpackConfig, (error, stats) => {
   if (error) {
+    spinner.fail(chalk.red('Something wrong happened:\n'))
+
     throw error
   }
 
@@ -21,7 +21,7 @@ webpack(webpackConfig, (error, stats) => {
     children: false,
     chunks: false,
     chunkModules: false
-  }) + '\n')
+  }) + '\n\n')
 
-  spinner.stop()
+  spinner.succeed(chalk.green('Build finished with success!\n'))
 })

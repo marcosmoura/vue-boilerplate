@@ -12,13 +12,14 @@ const app = express()
 const compiler = webpack(webpackConfig)
 const rootPath = path.join(__dirname, '..', '..')
 const devMiddlewareInstance = devMiddleware(compiler, {
-  quiet: true,
   publicPath: config.publicPath,
-  index: config.indexPath
+  index: config.indexPath,
+  quiet: true,
+  historyApiFallback: true
 })
 
 const hotMiddlewareInstance = hotMiddleware(compiler, {
-  log() { }
+  log: false
 })
 
 compiler.plugin('compilation', (compilation) => {

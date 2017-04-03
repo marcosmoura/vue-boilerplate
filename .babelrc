@@ -1,18 +1,18 @@
 {
   "presets": [
-    "es2015",
-    "es2017",
-    "stage-0",
+    [
+      "es2015",
+      {
+        "loose": true
+      }
+    ],
+    "stage-2",
     [
       "env",
       {
         "modules": false
       }
     ]
-  ],
-  "plugins": [
-    "transform-runtime",
-    "add-module-exports"
   ],
   "env": {
     "test": {
