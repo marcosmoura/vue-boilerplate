@@ -1,5 +1,6 @@
 /* Third Party */
 import Vue from 'vue'
+import 'es6-promise/auto'
 // import { sync } from 'vuex-router-sync'
 
 /* App */
@@ -13,12 +14,14 @@ import './core'
 
 Vue.config.productionTip = false
 
-// eslint-disable-next-line
-new Vue({
+const app = new Vue({
   name: 'root',
-  el: '#app',
   router,
   // store,
   i18n,
   render: mount => mount(App)
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  app.$mount('#app')
 })
