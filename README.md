@@ -5,6 +5,7 @@
 ## Progress
 - [X] Webpack 2
 - [X] ESLint
+- [X] ESLint Standard
 - [X] Vue.js
 - [X] Vuex
 - [X] Vuex Router Sync
@@ -16,6 +17,7 @@
 - [X] AVA Tests
 - [X] Code Coverage
 - [X] Offline Support
+- [X] Pre Rendered HTML routes
 - [ ] Server-Side Rendering
 
 ## Installation

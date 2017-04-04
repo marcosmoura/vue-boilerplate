@@ -13,7 +13,7 @@
       hello: 'Hello'
     }),
     methods: {
-      sayHello() {
+      sayHello () {
         return this.hello
       }
     }

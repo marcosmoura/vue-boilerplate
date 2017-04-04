@@ -1,25 +1,14 @@
 {
   "root": true,
   "parser": "babel-eslint",
-  "parserOptions": {
-    "sourceType": "module"
-  },
-  "env": {
-    "browser": true
-  },
   "plugins": [
-    "html",
-    "vue"
+    "html"
   ],
   "extends": [
-    "vue"
+    "standard"
   ],
   "rules": {
     "arrow-parens": 0,
-    "generator-star-spacing": 0,
-    "space-before-function-paren": [
-      "error",
-      "never"
-    ]
+    "generator-star-spacing": 0
   }
 }
