@@ -15,7 +15,7 @@
 - [X] SASS with Autoprefixer
 - [X] AVA Tests
 - [X] Code Coverage
-- [ ] Offline Support
+- [X] Offline Support
 - [ ] Server-Side Rendering
 
 ## Installation
