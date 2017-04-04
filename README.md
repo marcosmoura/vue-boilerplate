@@ -11,7 +11,6 @@
 - [X] Vue Router
 - [X] Vue i18n
 - [X] Fetch API
-- [ ] Flow Type
 - [X] Hotreload
 - [X] SASS with Autoprefixer
 - [X] AVA Tests
