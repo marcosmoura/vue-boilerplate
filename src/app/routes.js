@@ -6,7 +6,7 @@ const ErrorPage = r => require.ensure([], () => r(require('./modules/Error/Error
 
 Vue.use(VueRouter)
 
-const routes = [
+export const routes = [
   {
     path: '/',
     name: 'home',

@@ -12,6 +12,11 @@ import OfflinePlugin from 'offline-plugin'
 import PrerenderSpaPlugin from 'prerender-spa-plugin'
 import config from '../config'
 import baseConfig from './base'
+import { routes } from '../../src/app/routes'
+
+const prerenderRoutes = []
+
+routes.forEach(route => route.path !== '*' && prerenderRoutes.push(route.path))
 
 baseConfig.entry.app.push('./build/server/offline')
 
@@ -132,7 +137,7 @@ export default merge(baseConfig, {
     new OptimizeCssAssetsPlugin({
       canPrint: false
     }),
-    new PrerenderSpaPlugin(config.rootPath, ['/']),
+    new PrerenderSpaPlugin(config.rootPath, prerenderRoutes),
     new OfflinePlugin()
   ]
 })
