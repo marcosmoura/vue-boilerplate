@@ -23,7 +23,7 @@ baseConfig.entry.app.push('./build/server/offline')
 export default merge(baseConfig, {
   output: {
     path: config.rootPath,
-    publicPath: '',
+    publicPath: '/',
     filename: '[name].[chunkhash:8].js',
     chunkFilename: '[name].[chunkhash:8].js'
   },
