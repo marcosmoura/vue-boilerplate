@@ -1,6 +1,5 @@
-/* eslint-disable */
 import * as types from './mutations'
 
-export const action = ({ commit }) => {
-  commit('')
+export const myAction = ({ commit }) => {
+  commit(types.MUTATION_NAME)
 }

@@ -1,4 +1,3 @@
-/* eslint-disable */
-export const getter = state => {
-  return ''
+export const myGetter = function (state) {
+  return state
 }
