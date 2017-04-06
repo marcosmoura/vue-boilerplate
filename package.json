@@ -19,7 +19,7 @@
   "dependencies": {
     "es6-promise": "^4.1.0",
     "vue": "^2.2.6",
-    "vue-i18n": "beta",
+    "vue-i18n": "^6.0.0",
     "vue-router": "^2.3.1",
     "vuex": "^2.2.1",
     "vuex-router-sync": "^4.1.2",
