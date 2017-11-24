@@ -2,10 +2,6 @@
 
 > An opinionated Vue.js boilerplate
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/265KRzahMKDQEQEzoo9BxRiH/marcosmoura/vue-boilerplate'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/265KRzahMKDQEQEzoo9BxRiH/marcosmoura/vue-boilerplate.svg' />
-</a>
-
 ## Progress
 - [X] Webpack 2
 - [X] ESLint
